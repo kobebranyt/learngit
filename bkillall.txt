@@ -1,0 +1,1 @@
+for i in `bjobs | cut -d " " -f 1 | grep -v JOBID`; do bkill $i; done
